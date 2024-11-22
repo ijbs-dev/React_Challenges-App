@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ListaDeTarefas.css";
 
 const ListaDeTarefas = () => {
   const [tarefas, setTarefas] = useState([]);
@@ -26,38 +27,50 @@ const ListaDeTarefas = () => {
   const tarefasPendentes = tarefas.filter((tarefa) => !tarefa.concluida);
 
   return (
-    <div>
-      <h2>Lista de Tarefas</h2>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Nova tarefa"
-      />
-      <button onClick={adicionarTarefa}>Adicionar</button>
-      <ul>
+    <div className="lista-container">
+      <h2 className="lista-titulo">Lista de Tarefas</h2>
+      <div className="lista-input-container">
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Digite uma nova tarefa"
+          className="lista-input"
+        />
+        <button onClick={adicionarTarefa} className="lista-adicionar">
+          Adicionar
+        </button>
+      </div>
+      <ul className="lista-tarefas">
         {tarefas.map((tarefa, index) => (
-          <li key={index}>
-            <span
-              style={{
-                textDecoration: tarefa.concluida ? "line-through" : "none",
-              }}
-            >
-              {tarefa.texto}
-            </span>
-            <button onClick={() => marcarConcluida(index)}>
-              {tarefa.concluida ? "Desmarcar" : "Concluir"}
-            </button>
-            <button onClick={() => removerTarefa(index)}>Remover</button>
+          <li key={index} className={`tarefa-item ${tarefa.concluida ? "concluida" : ""}`}>
+            <span>{tarefa.texto}</span>
+            <div className="tarefa-botoes">
+              <button
+                onClick={() => marcarConcluida(index)}
+                className={`tarefa-concluir ${tarefa.concluida ? "desmarcar" : ""}`}
+              >
+                {tarefa.concluida ? "Desmarcar" : "Concluir"}
+              </button>
+              <button onClick={() => removerTarefa(index)} className="tarefa-remover">
+                Remover
+              </button>
+            </div>
           </li>
         ))}
       </ul>
-      <h3>Tarefas Pendentes</h3>
-      <ul>
-        {tarefasPendentes.map((tarefa, index) => (
-          <li key={index}>{tarefa.texto}</li>
-        ))}
-      </ul>
+      {tarefasPendentes.length > 0 && (
+        <>
+          <h3 className="lista-subtitulo">Tarefas Pendentes</h3>
+          <ul className="lista-tarefas-pendentes">
+            {tarefasPendentes.map((tarefa, index) => (
+              <li key={index} className="tarefa-pendente">
+                {tarefa.texto}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </div>
   );
 };
