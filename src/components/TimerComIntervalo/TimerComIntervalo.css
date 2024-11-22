@@ -1,0 +1,81 @@
+/* Container principal */
+.timer-container {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .timer-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Controles */
+  .timer-controles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  /* Input */
+  .timer-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    width: 150px;
+  }
+  
+  /* Botões */
+  .timer-botao {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Botões por tipo */
+  .timer-iniciar {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .timer-iniciar:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .timer-pausar {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .timer-pausar:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
+  
+  .timer-reiniciar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .timer-reiniciar:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
+  /* Botões desabilitados */
+  .timer-botao:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+  }
+  

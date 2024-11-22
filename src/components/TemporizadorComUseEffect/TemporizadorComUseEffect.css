@@ -1,0 +1,79 @@
+/* Container principal */
+.temporizador-container {
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+  }
+  
+  /* Título */
+  .temporizador-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Botões */
+  .temporizador-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .temporizador-botao {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Estilos específicos dos botões */
+  .temporizador-botao.iniciar {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .temporizador-botao.iniciar:hover {
+    background-color: #45a049;
+  }
+  
+  .temporizador-botao.pausar {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .temporizador-botao.pausar:hover {
+    background-color: #e0a800;
+  }
+  
+  .temporizador-botao.reiniciar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .temporizador-botao.reiniciar:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Botões desabilitados */
+  .temporizador-botao:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+  }
+  
+  .temporizador-botao.desabilitado {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  

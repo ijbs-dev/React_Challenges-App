@@ -1,0 +1,90 @@
+/* Container Principal */
+.formulario-container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Título do formulário */
+  .formulario-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Campo de entrada */
+  .formulario-campo {
+    position: relative;
+  }
+  
+  .formulario-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .formulario-input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Botão de envio */
+  .formulario-botao {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .formulario-botao:hover {
+    background-color: #45a049;
+  }
+  
+  /* Mensagem de erro ou sucesso */
+  .formulario-mensagem {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .formulario-container {
+      padding: 20px;
+    }
+  
+    .formulario-titulo {
+      font-size: 20px;
+    }
+  
+    .formulario-input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .formulario-botao {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

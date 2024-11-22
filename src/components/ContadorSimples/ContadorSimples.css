@@ -1,0 +1,87 @@
+/* Corpo principal do contador */
+.contador-container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Título */
+  .contador-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Valor do contador */
+  .contador-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4caf50;
+    margin: 20px 0;
+  }
+  
+  /* Área dos botões */
+  .contador-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Botões */
+  .button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .incrementar {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .incrementar:hover {
+    background-color: #45a049;
+  }
+  
+  .decrementar {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .decrementar:hover {
+    background-color: #e53935;
+  }
+  
+  /* Estado desativado */
+  .disabled {
+    background-color: #d3d3d3;
+    color: #ffffff;
+    cursor: not-allowed;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .contador-container {
+      padding: 20px;
+    }
+    .contador-title {
+      font-size: 20px;
+    }
+    .contador-value {
+      font-size: 36px;
+    }
+    .button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  

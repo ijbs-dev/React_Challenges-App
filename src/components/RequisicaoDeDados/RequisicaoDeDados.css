@@ -1,0 +1,119 @@
+/* Container principal */
+.requisicao-container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Título */
+  .requisicao-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Botão de recarregar */
+  .requisicao-botao {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .requisicao-botao:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .requisicao-botao:hover:enabled {
+    background-color: #45a049;
+  }
+  
+  /* Mensagem de erro */
+  .requisicao-erro {
+    color: #f44336;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Lista de posts */
+  .requisicao-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .requisicao-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .requisicao-item-titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .requisicao-item-body {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Indicador de carregamento */
+  .requisicao-carregando {
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+  }
+  
+  /* Paginação */
+  .paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .paginacao-botao {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .paginacao-botao:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .paginacao-botao:hover:enabled {
+    background-color: #45a049;
+  }
+  
+  .paginacao-info {
+    font-size: 16px;
+    color: #333;
+  }
+  

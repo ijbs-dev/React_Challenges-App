@@ -1,0 +1,116 @@
+/* Container principal */
+.galeriaContainer {
+  text-align: center;
+  margin: 20px;
+}
+
+.galeriaTitulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Thumbnails */
+.galeriaThumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.galeriaThumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.galeriaThumbnail:hover {
+  transform: scale(1.1);
+  border-color: #4caf50;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Controlado para não interferir */
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+/* Imagem no modal */
+.modalImage {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+}
+
+/* Botão Fechar */
+.modalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalClose:hover {
+  background-color: #d32f2f;
+}
+
+/* Navegação */
+.modalNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.modalNav:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalNavPrev {
+  left: -60px;
+}
+
+.modalNavNext {
+  right: -60px;
+}
+
+.modalNav:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.3);
+}

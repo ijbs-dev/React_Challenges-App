@@ -1,0 +1,64 @@
+/* Container principal */
+.alteracao-cor-container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Título */
+  .alteracao-cor-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Exibição da cor atual */
+  .alteracao-cor-value {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: color 0.3s ease;
+  }
+  
+  /* Botão de alterar cor */
+  .alteracao-cor-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .alteracao-cor-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .alteracao-cor-container {
+      padding: 20px;
+    }
+  
+    .alteracao-cor-title {
+      font-size: 20px;
+    }
+  
+    .alteracao-cor-value {
+      font-size: 28px;
+    }
+  
+    .alteracao-cor-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
