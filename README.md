@@ -1,70 +1,143 @@
-# Getting Started with Create React App
+# **React Desafios** 🖥️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório **React Desafios**! 🚀 Este projeto reúne desafios práticos desenvolvidos em **React.js** para reforçar conceitos como componentes, hooks, estado, e estilos modernos de interface.
 
-## Available Scripts
+## **Menu**
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Desafios](#desafios)
+  - [1. Contador Simples](#1-contador-simples)
+  - [2. Alteração de Cor de Fundo](#2-alteração-de-cor-de-fundo)
+  - [3. Lista de Tarefas](#3-lista-de-tarefas)
+  - [4. Temporizador com useEffect](#4-temporizador-com-useeffect)
+  - [5. Filtro de Lista](#5-filtro-de-lista)
+  - [6. Formulário de Registro Simples](#6-formulário-de-registro-simples)
+  - [7. Aplicação de Requisição de Dados](#7-aplicação-de-requisição-de-dados)
+  - [8. Galeria de Imagens com Modal](#8-galeria-de-imagens-com-modal)
+  - [9. Timer com Intervalo e Alerta](#9-timer-com-intervalo-e-alerta)
+  - [10. Tabs Navegáveis](#10-tabs-navegáveis)
+---
 
-In the project directory, you can run:
+## **Sobre o Projeto**
 
-### `npm start`
+Este repositório contém uma coleção de **10 desafios React.js** que abordam conceitos como:
+- **useState** e **useEffect**
+- Manipulação de eventos
+- Requisições API (usando **Axios**)
+- Modais e navegação
+- Layouts responsivos e estilização com **CSS** modular
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O objetivo é melhorar a compreensão de React e criar componentes reutilizáveis e dinâmicos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## **Pré-requisitos**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Certifique-se de ter as seguintes ferramentas instaladas:
+- **Node.js** >= 16
+- **npm** ou **yarn**
+- Editor de texto (como **VS Code**)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Instalação**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Siga os passos abaixo para configurar o projeto localmente:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/react-desafios.git
+   ```
 
-### `npm run eject`
+2. Acesse o diretório do projeto:
+   ```bash
+   cd react-desafios
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+   ou
+   ```bash
+   yarn install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm start
+   ```
+   ou
+   ```bash
+   yarn start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Acesse no navegador:
+   ```
+   http://localhost:3000
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## **Estrutura do Projeto**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```plaintext
+react-desafios/
+├── public/                # Arquivos estáticos
+├── src/                   # Código-fonte
+│   ├── components/        # Componentes React (um para cada desafio)
+│   │   ├── ContadorSimples/
+│   │   ├── AlteracaoCorDeFundo/
+│   │   ├── ListaDeTarefas/
+│   │   ├── TemporizadorComUseEffect/
+│   │   ├── FiltroDeLista/
+│   │   ├── FormularioDeRegistroSimples/
+│   │   ├── RequisicaoDeDados/
+│   │   ├── GaleriaDeImagens/
+│   │   ├── TimerComIntervalo/
+│   │   ├── TabsNavegaveis/
+│   ├── App.jsx            # Menu principal
+│   ├── index.js           # Ponto de entrada
+├── .gitignore             # Arquivos ignorados pelo Git
+├── README.md              # Documentação do projeto
+└── package.json           # Dependências e scripts do projeto
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## **Desafios**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **1. Contador Simples**
+Um componente que exibe um número na tela e permite incrementá-lo ou decrementá-lo. O valor não pode ser menor que 0. [Saiba mais](./src/components/ContadorSimples)
 
-### Analyzing the Bundle Size
+### **2. Alteração de Cor de Fundo**
+Altere a cor de fundo da página ao clicar em um botão, gerando cores aleatórias. [Saiba mais](./src/components/AlteracaoCorDeFundo)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **3. Lista de Tarefas**
+Uma lista de tarefas onde o usuário pode adicionar, remover, concluir e filtrar tarefas pendentes. [Saiba mais](./src/components/ListaDeTarefas)
 
-### Making a Progressive Web App
+### **4. Temporizador com useEffect**
+Um temporizador que conta o tempo em segundos, com botões para pausar e reiniciar. [Saiba mais](./src/components/TemporizadorComUseEffect)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **5. Filtro de Lista**
+Filtre uma lista de nomes digitando no campo de busca. [Saiba mais](./src/components/FiltroDeLista)
 
-### Advanced Configuration
+### **6. Formulário de Registro Simples**
+Um formulário que captura nome, e-mail e senha, exibindo uma mensagem de boas-vindas após o envio. [Saiba mais](./src/components/FormularioDeRegistroSimples)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### **7. Aplicação de Requisição de Dados**
+Consuma uma API pública (JSONPlaceholder) para exibir uma lista de posts com recarregamento dinâmico. [Saiba mais](./src/components/RequisicaoDeDados)
 
-### Deployment
+### **8. Galeria de Imagens com Modal**
+Exiba uma galeria de imagens clicáveis que abrem em um modal com navegação. [Saiba mais](./src/components/GaleriaDeImagens)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### **9. Timer com Intervalo e Alerta**
+Defina um tempo de contagem regressiva e receba um alerta ao término. [Saiba mais](./src/components/TimerComIntervalo)
 
-### `npm run build` fails to minify
+### **10. Tabs Navegáveis**
+Uma interface de abas para exibir diferentes conteúdos ao clicar. [Saiba mais](./src/components/TabsNavegaveis)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
