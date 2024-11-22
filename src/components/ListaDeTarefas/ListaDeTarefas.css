@@ -1,0 +1,134 @@
+/* Estilos principais */
+.lista-container {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .lista-titulo {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Entrada e botão de adicionar */
+  .lista-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .lista-input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .lista-adicionar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .lista-adicionar:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Lista de tarefas */
+  .lista-tarefas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tarefa-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .tarefa-item:hover {
+    transform: translateY(-3px);
+    background-color: #e8f5fe;
+  }
+  
+  .tarefa-item.concluida span {
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  /* Botões de cada tarefa */
+  .tarefa-botoes {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .tarefa-concluir {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tarefa-concluir:hover {
+    background-color: #218838;
+  }
+  
+  .tarefa-concluir.desmarcar {
+    background-color: #ffc107;
+  }
+  
+  .tarefa-remover {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tarefa-remover:hover {
+    background-color: #c82333;
+  }
+  
+  /* Lista de tarefas pendentes */
+  .lista-subtitulo {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .lista-tarefas-pendentes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tarefa-pendente {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 8px;
+  }
+  
